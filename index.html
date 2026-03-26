@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financial Literacy Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="#" aria-label="Financial Literacy Club Home">
+        <!-- Placeholder logo image -->
+        <img
+          src="Assests/IMG_20260326_075558.jpg-removebg-preview.png"
+          alt="Financial Literacy Club logo"
+        />
+        <span class="name">
+          <strong>Financial Literacy Club</strong>
+          <span>Learn. Invest. Grow.</span>
+        </span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#blogs">Blogs</a>
+          <a href="#join">Join</a>
+        </nav>
+        <a class="join-btn" href="#join" role="button">Join Now</a>
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span class="lines" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+      <div class="panel-inner">
+        <nav class="mobile-links" aria-label="Mobile navigation">
+          <a href="#home" data-close-menu>Home</a>
+          <a href="#about" data-close-menu>About</a>
+          <a href="#blogs" data-close-menu>Blogs</a>
+          <a href="#join" data-close-menu>Join</a>
+        </nav>
+        <div class="mobile-actions">
+          <a class="join-btn" href="#join" role="button" data-close-menu>Join Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <section class="hero" id="home" aria-label="Financial Literacy Club hero">
+      <div class="hero-inner">
+        <div class="hero-left" data-reveal>
+          <div class="hero-kicker" aria-hidden="true">
+            <span class="dot"></span>
+            Premium learning for your money goals
+          </div>
+
+          <h1>Beyond The Balance Sheet.</h1>
+          <p>
+            Join students mastering money, investing, and financial freedom.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#join">Join Club</a>
+            <a class="btn btn-secondary" href="#blogs">Explore Blogs</a>
+          </div>
+        </div>
+
+        <div class="hero-right" data-reveal>
+          <div class="graph-card" role="img" aria-label="Animated finance growth graph">
+            <div class="graph-top">
+              <div class="graph-title">
+                <span class="graph-badge">Growth</span>
+                <strong>Investment Momentum</strong>
+              </div>
+              <div class="graph-subtle">Time horizon: 12 months</div>
+            </div>
+
+            <div class="graph-stage">
+              <svg
+                class="growth-graph"
+                viewBox="0 0 600 260"
+                width="600"
+                height="260"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <defs>
+                  <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+                    <stop offset="0%" stop-color="var(--green)" />
+                    <stop offset="100%" stop-color="var(--teal)" />
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="4" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <!-- Subtle grid -->
+                <g class="svg-grid" aria-hidden="true"></g>
+
+                <!-- Glow underlay -->
+                <path
+                  id="growthPathGlow"
+                  class="growth-path glow"
+                  d="M40 205
+                     C 115 196, 130 165, 190 150
+                     C 248 136, 272 106, 320 92
+                     C 370 78, 418 62, 458 52
+                     C 505 40, 535 55, 565 32"
+                  fill="none"
+                />
+
+                <!-- Main line (animated by JS via stroke-dashoffset) -->
+                <path
+                  id="growthPath"
+                  class="growth-path"
+                  d="M40 205
+                     C 115 196, 130 165, 190 150
+                     C 248 136, 272 106, 320 92
+                     C 370 78, 418 62, 458 52
+                     C 505 40, 535 55, 565 32"
+                  fill="none"
+                />
+
+                <!-- Floating dots injected by JS -->
+                <g id="graphDots" class="graph-dots"></g>
+              </svg>
+
+              <div class="graph-hint" aria-hidden="true">
+                Watch your returns compound.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about" aria-label="About Financial Literacy Club">
+      <div class="about-header" data-reveal>
+        <span class="section-label">About Us</span>
+        <h2>Empowering Students Through <span class="highlight">Financial Knowledge</span></h2>
+        <p class="section-desc">
+          We are a student-driven initiative focused on building financial awareness and smart money habits.
+        </p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-main-grid">
+          <div class="vision-mission" data-reveal>
+            <div class="about-card vision">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h3>Our Vision</h3>
+              <p>To create financially aware individuals who make smart and informed money decisions.</p>
+            </div>
+            
+            <div class="about-card mission">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <h3>Our Mission</h3>
+              <p>To educate students about saving, investing, and managing money through practical learning and real-world insights.</p>
+            </div>
+          </div>
+
+          <div class="about-image-container" data-reveal>
+            <div class="image-wrapper">
+              <img src="https://i.pinimg.com/1200x/0c/15/40/0c1540f2726beb9c1b37842e7cfa8eea.jpg" alt="Students collaborating on financial planning" class="about-img">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="coordinators-section">
+        <div class="sub-header" data-reveal>
+          <h3>Meet Our Coordinators</h3>
+        </div>
+        
+        <div class="coordinators-grid">
+          <div class="coordinator-card" data-reveal>
+            <div class="profile-img">
+              <div class="img-placeholder">
+                <img src="https://www.sju.edu.in/uploads/faculty/medium/652449217_2023-08-18_09-59-06.png" alt="">
+              </div>
+            </div>
+            <h4>Mr Abhishek P</h4>
+            <span class="role">Assistant Professor,Commerce</span>
+            <p>Empowering the next generation with years of academic and professional expertise in finance.</p>
+          </div>
+
+          <div class="coordinator-card" data-reveal>
+            <div class="profile-img">
+              <div class="img-placeholder">
+                <img src="https://www.sju.edu.in/uploads/faculty/medium/1025010405_2023-08-18_10-00-07.png" alt="">
+              </div>
+            </div>
+            <h4>Ms Shree Lakshmi K S</h4>
+            <span class="role">Assistant Professor,Commerce</span>
+            <p>Guiding students towards a brighter future through mentorship and innovative learning strategies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="blogs-section" id="blogs" aria-label="Financial Literacy Club Blogs">
+      <div class="section-header" data-reveal>
+        <span class="section-label">Our Blogs</span>
+        <h2>Learn Smart <span class="highlight">Money Habits</span></h2>
+        <p class="section-desc">
+          Explore simple and practical guides to improve your financial knowledge.
+        </p>
+      </div>
+
+      <div class="blogs-grid">
+        <!-- Blog Card 1 -->
+        <article class="blog-card" data-reveal>
+          <div class="blog-image">
+            <img src="https://i.pinimg.com/736x/86/5a/b5/865ab561622dc5055543eb4cff74dbd5.jpg" alt="Saving money concept">
+            <span class="category-tag">Saving</span>
+          </div>
+          <div class="blog-body">
+            <h3>How to Start Saving as a Student</h3>
+            <p>Master the art of budgeting and building your first emergency fund with ease.</p>
+            <a href="#" class="read-more">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card" data-reveal>
+          <div class="blog-image">
+            <img src="https://i.pinimg.com/1200x/f3/0a/cb/f30acb2021efa8e103df6a6a1e31279f.jpg" alt="Investing concept">
+            <span class="category-tag">Investing</span>
+          </div>
+          <div class="blog-body">
+            <h3>Investing 101: Stocks & Mutual Funds</h3>
+            <p>A beginner's guide to understanding the market and growing your wealth long-term.</p>
+            <a href="#" class="read-more">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card" data-reveal>
+          <div class="blog-image">
+            <img src="https://i.pinimg.com/736x/0d/4d/d1/0d4dd190ea03dbce6a99a280d1293204.jpg" alt="Budgeting concept">
+            <span class="category-tag">Budgeting</span>
+          </div>
+          <div class="blog-body">
+            <h3>5 Apps to Track Your Expenses</h3>
+            <p>The best digital tools to help you stay on top of your spending and financial goals.</p>
+            <a href="#" class="read-more">
+              Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="blogs-footer" data-reveal>
+        <a href="#" class="btn-view-all">View All Blogs</a>
+      </div>
+    </section>
+
+    <section class="cta-section" id="join" aria-label="Join Financial Literacy Club">
+      <div class="cta-divider"></div>
+      <div class="cta-container" data-reveal>
+        <div class="cta-bg-glow"></div>
+        <div class="cta-content">
+          <h2>Start Your <span class="highlight">Financial Journey</span> Today</h2>
+          <p>Join a community of students learning how to save, invest, and grow their money smarter.</p>
+          
+          <div class="cta-actions">
+            <a href="#join-form" class="btn-cta-main">Join the Club</a>
+            <span class="trust-line">Open to all students • Free to join</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Section 1: Branding -->
+        <div class="footer-brand" data-reveal>
+          <a class="footer-logo" href="#">
+            <img src="Assests/IMG_20260326_075558.jpg-removebg-preview.png" alt="FLC Logo">
+            <span>Financial Literacy Club</span>
+          </a>
+          <p class="footer-desc">
+            Empowering students with financial knowledge and smart money habits.
+          </p>
+        </div>
+
+        <!-- Section 2: Quick Links -->
+        <div class="footer-links" data-reveal>
+          <h4>Quick Links</h4>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#join">Join</a>
+          </nav>
+        </div>
+
+        <!-- Section 3: Connect -->
+        <div class="footer-connect" data-reveal>
+          <h4>Connect</h4>
+          <div class="contact-info">
+            <a href="mailto:info@flclub.com" class="footer-email">info@flclub.com</a>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              <span>Instagram</span>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Financial Literacy Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Join Modal -->
+  <div class="modal-overlay" id="joinModal" aria-hidden="true">
+    <div class="modal-container">
+      <button class="modal-close" id="closeModal" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Join the <span class="highlight">Club</span></h2>
+          <p>Fill in your details to start your financial journey with us.</p>
+        </div>
+
+        <form id="joinForm" class="modal-form">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <span class="error-msg">Please enter your full name</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="regNumber">Register Number</label>
+              <input type="text" id="regNumber" name="regNumber" placeholder="e.g. 23COM001" required>
+              <span class="error-msg">Register number is required</span>
+            </div>
+            <div class="form-group">
+              <label for="dept">Department</label>
+              <select id="dept" name="dept" required>
+                <option value="" disabled selected>Select Dept</option>
+                <option value="Commerce">Commerce</option>
+                <option value="Science">Science</option>
+                <option value="Arts">Arts</option>
+                <option value="Management">Management</option>
+              </select>
+              <span class="error-msg">Please select your department</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="name@university.com" required>
+            <span class="error-msg">Please enter a valid email address</span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+            <span class="error-msg">Please enter a valid 10-digit number</span>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <span>Register Now</span>
+            <div class="btn-glow"></div>
+          </button>
+        </form>
+
+        <div id="successMsg" class="success-message" aria-live="polite">
+          <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3>You're successfully registered!</h3>
+          <p>Welcome to the community. We'll contact you soon.</p>
+          <button type="button" class="btn-close-success" id="closeSuccess">Got it!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
