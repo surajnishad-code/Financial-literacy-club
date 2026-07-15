@@ -30,7 +30,7 @@
           <a href="#blogs">Blogs</a>
           <a href="#join">Join</a>
         </nav>
-        <a class="join-btn" href="#join" role="button">Join Now</a>
+        <a class="join-btn" href="https://forms.gle/YeDCDLh8qiVwbiHy6" target="_blank" rel="noopener noreferrer" role="button">Join Now</a>
         <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
           <span class="lines" aria-hidden="true">
             <span></span><span></span><span></span>
@@ -48,7 +48,7 @@
           <a href="#join" data-close-menu>Join</a>
         </nav>
         <div class="mobile-actions">
-          <a class="join-btn" href="#join" role="button" data-close-menu>Join Now</a>
+          <a class="join-btn" href="https://forms.gle/YeDCDLh8qiVwbiHy6" target="_blank" rel="noopener noreferrer" role="button" data-close-menu>Join Now</a>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
           </p>
 
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#join">Join Club</a>
+            <a class="btn btn-primary" href="https://forms.gle/YeDCDLh8qiVwbiHy6" target="_blank" rel="noopener noreferrer">Join Club</a>
             <a class="btn btn-secondary" href="#blogs">Explore Blogs</a>
           </div>
         </div>
@@ -288,7 +288,7 @@
           <p>Join a community of students learning how to save, invest, and grow their money smarter.</p>
           
           <div class="cta-actions">
-            <a href="#join-form" class="btn-cta-main">Join the Club</a>
+            <a href="https://forms.gle/YeDCDLh8qiVwbiHy6" target="_blank" rel="noopener noreferrer" class="btn-cta-main">Join the Club</a>
             <span class="trust-line">Open to all students • Free to join</span>
           </div>
         </div>
@@ -346,74 +346,7 @@
     </div>
   </footer>
 
-  <!-- Join Modal -->
-  <div class="modal-overlay" id="joinModal" aria-hidden="true">
-    <div class="modal-container">
-      <button class="modal-close" id="closeModal" aria-label="Close modal">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-      
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>Join the <span class="highlight">Club</span></h2>
-          <p>Fill in your details to start your financial journey with us.</p>
-        </div>
 
-        <form id="joinForm" class="modal-form">
-          <div class="form-group">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-            <span class="error-msg">Please enter your full name</span>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="regNumber">Register Number</label>
-              <input type="text" id="regNumber" name="regNumber" placeholder="e.g. 23COM001" required>
-              <span class="error-msg">Register number is required</span>
-            </div>
-            <div class="form-group">
-              <label for="dept">Department</label>
-              <select id="dept" name="dept" required>
-                <option value="" disabled selected>Select Dept</option>
-                <option value="Commerce">Commerce</option>
-                <option value="Science">Science</option>
-                <option value="Arts">Arts</option>
-                <option value="Management">Management</option>
-              </select>
-              <span class="error-msg">Please select your department</span>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="name@university.com" required>
-            <span class="error-msg">Please enter a valid email address</span>
-          </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
-            <span class="error-msg">Please enter a valid 10-digit number</span>
-          </div>
-
-          <button type="submit" class="btn-submit">
-            <span>Register Now</span>
-            <div class="btn-glow"></div>
-          </button>
-        </form>
-
-        <div id="successMsg" class="success-message" aria-live="polite">
-          <div class="success-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <h3>You're successfully registered!</h3>
-          <p>Welcome to the community. We'll contact you soon.</p>
-          <button type="button" class="btn-close-success" id="closeSuccess">Got it!</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
